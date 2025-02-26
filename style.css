@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97svh;
+    background-color: white;
+}
+
+.safebox {
+    position: relative;
+    background-image: linear-gradient(45deg,
+            hsl(0deg 0% 0%) 0%,
+            hsl(344deg 0% 12%) 8%,
+            hsl(344deg 0% 21%) 17%,
+            hsl(344deg 0% 31%) 25%,
+            hsl(344deg 0% 41%) 33%,
+            hsl(344deg 0% 52%) 42%,
+            hsl(0deg 0% 64%) 50%,
+            hsl(344deg 0% 52%) 58%,
+            hsl(344deg 0% 41%) 67%,
+            hsl(344deg 0% 31%) 75%,
+            hsl(344deg 0% 21%) 83%,
+            hsl(344deg 0% 12%) 92%,
+            hsl(0deg 0% 0%) 100%);
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+
+.safebox::before {
+    content: "";
+    position: absolute;
+    inset: 0.3rem;
+    background-color: black;
+    border-radius: 50%;
+}
+.safebox__counter {
+    position: absolute;
+    inset: 0.6rem;
+    background-color: rgb(33 33 33);
+    border-radius: 50%;
+    box-shadow:  0 0 0.5rem 0 white;
+}
+
+.safebox__counter::before {
+    content: "";
+    position: absolute;
+    inset: 1.9rem;
+    background-color: #3c3c3c;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.safebox__chassis {
+    position: relative;
+    inset: 2.8rem 0 2.8rem 0;
+    border-radius: 50%;
+    margin: auto;
+    width: 4.4rem;
+    height: 4.4em;
+    transition: 0.4s ease-in-out;
+    transform: rotate(calc(var(--i) * 6deg));
+    z-index: 2;
+}
+.safebox__chassis::before {
+    content: "";
+    position: absolute;
+    inset: 0.4rem 0 auto 0;
+    margin: auto;
+    width: 0.2rem;
+    height: 0.9rem;
+    border-radius: 0.5rem;
+    background-color: crimson;
+    z-index: 3;
+}
+.safebox__counter::after {
+    content: "";
+    position: absolute;
+    inset: 2.3rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgb(175, 175, 175) 27%, rgb(215, 215, 215) 47%, rgb(235, 235, 235) 77%);
+    transform: rotate(calc(var(--i) * -6deg));
+    z-index: 2;
+}
+
+.number {
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    background-color: white;
+    width: 0.15rem;
+    transform: rotate(calc(var(--i) * 6deg));
+    border-radius: 0.5rem;
+}

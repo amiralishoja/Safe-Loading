@@ -7,6 +7,7 @@ This is Safe Loading
 
 ## Lessons Learned
 
+- Html
 - Css
 - JavaScirpt
 - Git

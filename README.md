@@ -1,6 +1,6 @@
 ![Demo](demo.png)
 
-# 📀 Safe Deposit Loading Project
+# 📀 Safe Deposit Loading
 
 Hello and welcome to this repository, it's a simple loading. i made it just with html css and a litle java script, also design was my idea. so if you like it don't forget give star.
 
